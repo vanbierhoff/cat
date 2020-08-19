@@ -1,0 +1,106 @@
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav__list > li{
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.nav__item{
+    text-transform: uppercase;
+    color:#000000;
+
+}
+
+.nav__item:hover{
+  font-weight: 700;
+}
+
+.addCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    max-width: 300px;
+    margin: 0 auto;
+
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.container__gradient{
+    display: block;
+    width: 100vw;
+    height: 15px;
+    background: linear-gradient( to right,
+    #33cc99,#40ceb1,#55b9c1,#68a6cf,#7a93dc,
+    #907eed,#a36afb);
+}
+
+
+.container__header{
+    width: 100vw;
+    text-align: center;
+    background: #686868;
+    color:#ffffff;
+    margin: 0;
+    padding: 2% 0;
+    text-transform: uppercase;
+}
+
+
+
+.store__card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_active{
+    box-shadow: 0 2px  #68a6cf;
+}
+
+.tile_active{
+    box-shadow: 0 2px  #68a6cf;
+}
+input{
+    border: 1px solid black;
+}
+
+textarea{
+    resize: none;
+    outline: 0!important;
+}
+
+.input_active{
+    border:greenyellow 1px solid;
+}
+input:focus{
+    border: 1px solid inherit;
+    outline: 0!important;
+}
+
+
+textarea:focus{
+    border: 1px solid inherit;
+}
+
+.form_block-mr{
+    margin-top: 10px;
+}
+

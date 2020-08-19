@@ -1,0 +1,19 @@
+<div class="container__gradient"></div>
+<h2 class="container__header">библиотека котиков</h2>
+<nav class="nav">
+    <input type="radio" value="card" name="nav" id="nav__card" 
+    [(ngModel)]="view">
+         <label for="nav__card" 
+         [ngClass]="{ 'card_active': view === 'card'}">Плитка</label>
+
+    <input type="radio" value="tile" name="nav" id="nav__tile" 
+    [(ngModel)]="view">
+         <label for="nav__tile" 
+         [ngClass]="{ 'card_active': view === 'tile'}">таблица</label>
+</nav>
+<div class="container">
+
+    <app-card *ngIf=" view === 'card' " [cards]="cards" (like)="toggleLike($event)"></app-card>
+    <app-tile *ngIf="view === 'tile' " [cards]="cards" (like)="toggleLike($event)"></app-tile>
+
+</div>

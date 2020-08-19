@@ -1,0 +1,50 @@
+.card__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card__cat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 250px;
+    width: 100%;
+    margin: 35px 25px;
+}
+
+.card__image{
+    max-width: 250px;
+}
+
+
+.card__wrapper{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background: #a3a3a3;
+    padding: 8px 4% 8px;
+}
+
+
+
+.card__like{
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+
+.like-stroke{
+    fill: #ffffff;
+}
+
+
+.like-insert{
+    fill: #a3a3a3;
+}
+
+.like-insert_active{
+    fill:#ffffff;
+}
