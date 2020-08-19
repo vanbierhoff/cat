@@ -9,11 +9,6 @@ export interface Cats {
     liked: boolean;
 }
 
-interface TestAddForm {
-    name: boolean;
-    url: boolean;
-    description: boolean;
-}
 
 @Component({
     selector: 'app-root',
