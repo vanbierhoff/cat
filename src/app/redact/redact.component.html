@@ -1,0 +1,16 @@
+<div class="redact__container">
+
+  <input type="text" class="redact__input"
+         placeholder="name" [(ngModel)]="name">
+  <input type="text" class="redact__input"
+         placeholder="url" [(ngModel)]="image">
+
+  <textarea type="text" rows="5" class="redact__input redact__input_resize"
+            placeholder="description" [(ngModel)]="description"
+
+  ></textarea>
+  <button type="submit" class="redact__btn" (click)="editCat()">Сохранить изменения</button>
+
+</div>
+
+

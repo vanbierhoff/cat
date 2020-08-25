@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+.container{
+    font-size: 1.7em;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 1.2em;
+    }
+
+}

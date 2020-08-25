@@ -1,0 +1,20 @@
+<div class="container__gradient"></div>
+<h2 class="container__header">библиотека котиков</h2>
+<nav class="nav">
+    <input type="radio" value="card" name="nav" id="nav__card">
+         <label for="nav__card"
+        [routerLinkActive]="'card_active'"
+        >
+         <a [routerLink]=" ['card'] ">Карточка</a>
+        </label>
+
+    <input type="radio" value="tile" name="nav" id="nav__tile" >
+         <label for="nav__tile"
+         [routerLinkActive]="'card_active'">
+         <a [routerLink]="['tile']">Плитка</a>
+        </label>
+</nav>
+
+<div class="container container__component">
+  <router-outlet ></router-outlet>
+</div>

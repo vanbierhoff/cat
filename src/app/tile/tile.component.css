@@ -1,0 +1,66 @@
+.tile{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    background: #a3a3a3;
+    padding: 0 3% 0 0;
+    margin: 2.5% 0;
+}
+
+.tile__image{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.tile__name{
+    text-transform: uppercase;
+}
+.tile_svg-container{
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  }
+
+
+.tile__like{
+    align-self: center;
+    margin-left: auto;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tile__redact{
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.tile-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.tile__description{
+    margin: 0;
+}
+
+
+.like-stroke{
+    fill: #ffffff;
+}
+
+
+.like-insert{
+    fill: #a3a3a3;
+}
+
+.like-insert_active{
+    fill:#ffffff;
+}
+
