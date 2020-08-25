@@ -3,7 +3,7 @@
       <img [src]="card.image" alt="" class="card__image">
       <div class="card__wrapper">
          <span class="card__name">{{card.name}}</span>
-         <svg (click)="like.emit(card)" class="card__like  like-stroke" xmlns="http://www.w3.org/2000/svg"
+         <svg (click)="like(card)" class="card__like  like-stroke" xmlns="http://www.w3.org/2000/svg"
             height="512px" viewBox="0 -20 480 480" width="512px">
             <g>
                <path [ngClass]="{'like-insert_active':card.liked}"

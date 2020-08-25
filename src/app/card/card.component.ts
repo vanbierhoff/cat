@@ -1,21 +1,37 @@
-import {Component, Input,  Output, EventEmitter } from '@angular/core';
-import { Cats } from '../app.component';
 
+import {Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import {CatService} from '../cat.store/cat.serive'
+import { CatQuery } from './../cat.store/cat.query';
+import {Cats} from '../cat.store/cat.models'
+import { controlCatService  } from '../control-cat.service'
 
 @Component({
     selector: 'app-card',
     templateUrl: './card.component.html',
-    styleUrls: ['./card.component.css']
+    styleUrls: ['./card.component.css'],
 })
 
-export class CardComponent {
-    toggleActiveClass: true;
-    @Input() cards: Cats;
-    @Output() like = new EventEmitter ()
+export class CardComponent implements OnInit {
 
-    toggleLike(card): void {
-       card.liked = !card.liked;
-       console.log( card + 'Clik JOB');
-    }
+  constructor(private route: ActivatedRoute,
+    private catService: CatService,
+    private catControl: controlCatService ,
+    private catQuery: CatQuery ) { }
+
+
+    toggleActiveClass: true;
+   cards: Cats[];
+
+   ngOnInit(): void {
+     debugger
+    this.catQuery.cats$.subscribe(cardCat => this.cards = cardCat)
+   }
+
+   like(card: Cats){
+      this.catControl.like(card)
+   }
+
+
 
 }
