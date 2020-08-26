@@ -13,8 +13,4 @@ export class CatStore extends EntityStore<CatState> {
   constructor() {
     super();
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> af29fb247e3400dcebb0c1be1ed0ee5d2d9ffac7
 }

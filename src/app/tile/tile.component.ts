@@ -1,18 +1,9 @@
-import { Observable } from 'rxjs';
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-<<<<<<< HEAD
-import {CatService} from '../cat.store/cat.serive'
-import { CatQuery } from './../cat.store/cat.query';
-import {Cats} from '../cat.store/cat.models'
-import { controlCatService  } from '../control-cat.service'
-=======
 import {CatService} from '../cat.store/cat.serive';
 import { CatQuery } from './../cat.store/cat.query';
 import {Cats} from '../cat.store/cat.models';
 import { controlCatService  } from '../control-cat.service';
->>>>>>> af29fb247e3400dcebb0c1be1ed0ee5d2d9ffac7
 
 
 @Component({
@@ -23,19 +14,6 @@ import { controlCatService  } from '../control-cat.service';
 export class TileComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
-<<<<<<< HEAD
-    private catService: CatService,
-    private catControl: controlCatService,
-    private catQuery: CatQuery ) { }
-
-  cards: Cats[];
-  ngOnInit(): void {
-    this.catQuery.cats$.subscribe(cardCat => this.cards = cardCat)
-  }
-
-  like(card: Cats){
-    this.catControl.like(card)
-=======
               private catService: CatService,
               private catControl: controlCatService,
               private catQuery: CatQuery) {
@@ -48,7 +26,6 @@ export class TileComponent implements OnInit {
 
   like(card: Cats): void{
     this.catControl.like(card);
->>>>>>> af29fb247e3400dcebb0c1be1ed0ee5d2d9ffac7
  }
 
 }

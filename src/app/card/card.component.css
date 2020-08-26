@@ -26,12 +26,16 @@
     padding: 8px 4% 8px;
 }
 
-
+.card__redact{
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 auto;
+  cursor: pointer;
+}
 
 .card__like{
     width: 20px;
     height: 20px;
-    margin-left: auto;
     cursor: pointer;
 
 }

@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-<<<<<<< HEAD
-=======
 import {CatService} from '../cat.store/cat.serive';
 import { CatQuery } from './../cat.store/cat.query';
+import { Location } from '@angular/common'
 
 interface EdiCat {
     id: string;
@@ -11,8 +10,7 @@ interface EdiCat {
     description: string;
     image: string;
     liked: boolean;
-}
->>>>>>> af29fb247e3400dcebb0c1be1ed0ee5d2d9ffac7
+};
 
 @Component({
   selector: 'app-redact',
@@ -20,17 +18,8 @@ interface EdiCat {
   styleUrls: ['./redact.component.css']
 })
 export class RedactComponent implements OnInit {
-
-<<<<<<< HEAD
-  constructor(private rout: ActivatedRoute) { }
-   name: string;
-   gett: string;
-  ngOnInit(): void {
-    this.name = this.rout.snapshot.params.id
-  }
-
-=======
   constructor(private rout: ActivatedRoute,
+              private location: Location,
               private catService: CatService,
               private catQuery: CatQuery) { }
    cat: EdiCat;
@@ -56,8 +45,6 @@ export class RedactComponent implements OnInit {
             liked: false
         };
         this.catService.editCat(this.cat.id, cat);
-        window.history.back();
-    }
-
->>>>>>> af29fb247e3400dcebb0c1be1ed0ee5d2d9ffac7
-}
+        this.location.back()
+    };
+};
