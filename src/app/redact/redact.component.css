@@ -8,6 +8,13 @@
   justify-content: center;
 }
 
+form .ng-invalid.ng-dirty {
+  border: 1px solid #800000;
+}
+form .ng-valid{
+  border: 1px solid#1C4204;
+}
+
 .redact__input{
   width: 60%;
   background: #FBEEFF;
@@ -34,4 +41,11 @@
   padding: 7px 5px;
   margin: 10px 0 0 0;
   border-radius: 8px;
+}
+
+.valid-input_not-valid{
+  border: 1px solid #800000;
+}
+.valid-input_valid{
+  border: 1px solid#1C4204;
 }

@@ -16,7 +16,6 @@ export class CardComponent implements OnInit {
     constructor(  private catService: CatService,
       private catQuery: CatQuery) {
     };
-    toggleActiveClass: true;
    cards: Cats[];
    ngOnInit(): void {
     this.catQuery.cats$.subscribe(cardCat => this.cards = cardCat);

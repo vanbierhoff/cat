@@ -1,7 +1,7 @@
 import { AppRouterModule } from './appRoute.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import {CardComponent} from './card/card.component';
 import { TileComponent } from './tile/tile.component';
@@ -18,7 +18,7 @@ import {RedactComponent } from './redact/redact.component'
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
     AppRouterModule,
     environment.production ? [] : AkitaNgDevtools.forRoot({})
   ],

@@ -1,15 +1,24 @@
 <div class="redact__container">
-
+<form  class="redact__container"
+[formGroup]="form" (ngSubmit)="editCat()"
+>
   <input type="text" class="redact__input"
-         placeholder="name" [(ngModel)]="name">
-  <input type="text" class="redact__input"
-         placeholder="url" [(ngModel)]="image">
+  formControlName="name"
 
-  <textarea type="text" rows="5" class="redact__input redact__input_resize"
-            placeholder="description" [(ngModel)]="description"
+  placeholder="name">
+<input type="text" class="redact__input"
+formControlName="image"
 
-  ></textarea>
-  <button type="submit" class="redact__btn" (click)="editCat()">{{typeButton}}</button>
+  placeholder="url" >
+
+<textarea type="text" rows="5" class="redact__input redact__input_resize"
+     placeholder="description"
+     formControlName="description"
+></textarea>
+<button type="submit" class="redact__btn"
+[disabled]="!form.valid"
+>{{typeButton}}</button>
+</form>
 
 </div>
 

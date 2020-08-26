@@ -1,8 +1,9 @@
+import { EdiCat } from './../redact/redact.component';
 
 import { CatStore } from './cat.store';
 import { Cats } from './cat.models';
 import { Injectable} from '@angular/core';
-
+import { EditCat } from '../redact/redact.component'
 
 
 // Интеграция стора с angular, уточнить как работает?
@@ -112,9 +113,9 @@ export class CatService {
             {liked: like});
 
     }
-
-    editCat(oldId: string, cat: Cats): void {
-        this.catStore.update(cat.id,
+    editCat(oldId: string, cat: EditCat): void {
+       debugger
+      this.catStore.update(oldId,
             {
                 id: cat.id,
                 name: cat.name,
@@ -122,11 +123,8 @@ export class CatService {
                 description: cat.description
             });
     }
-    setFilter(filter: string): void{
-        this.catStore.update({filter});
-    }
 
-    addCat(cat:Cats): void {
+    addCat(cat:any): void {
       this.catStore.add(cat);
     }
 

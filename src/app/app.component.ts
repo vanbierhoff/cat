@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
 
 
     ngOnInit(): void {
+      debugger
       this.catService.initCat()
     }
 }
