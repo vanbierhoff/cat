@@ -9,7 +9,7 @@ const routers: Routes = [
   {path: 'tile', component: TileComponent},
   {path: 'edit/:id', component: RedactComponent},
   {path: 'create', component: RedactComponent},
-  {path: '**', redirectTo: '/card', pathMatch: 'full'}
+  {path: '**', redirectTo: 'card', pathMatch: 'full'}
 ];
 
 @NgModule ({
