@@ -107,8 +107,9 @@ export class CatService {
     }
 
     toggleLike(cat: Cats): void {
+        const like: boolean = !cat.liked
         this.catStore.update(cat.id,
-            {liked: cat.liked});
+            {liked: like});
 
     }
 
@@ -124,4 +125,9 @@ export class CatService {
     setFilter(filter: string): void{
         this.catStore.update({filter});
     }
+
+    addCat(cat:Cats): void {
+      this.catStore.add(cat);
+    }
+
 }

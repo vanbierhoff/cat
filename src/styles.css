@@ -10,12 +10,6 @@ body{
     font-size: 1.7em;
 }
 
-input {
-    appearance: none;
-    -webkit-appearance: none;
-    opacity: 0;
-}
-
 @media screen and (max-width: 600px) {
     .container{
         font-size: 1.2em;

@@ -1,10 +1,9 @@
 
 import {Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import {CatService} from '../cat.store/cat.serive';
 import { CatQuery } from './../cat.store/cat.query';
 import {Cats} from '../cat.store/cat.models';
-import { controlCatService  } from '../control-cat.service';
+import { CatService } from './../cat.store/cat.serive';
+
 
 @Component({
     selector: 'app-card',
@@ -14,10 +13,8 @@ import { controlCatService  } from '../control-cat.service';
 
 export class CardComponent implements OnInit {
 
-    constructor(private route: ActivatedRoute,
-                private catService: CatService,
-                private catControl: controlCatService,
-                private catQuery: CatQuery) {
+    constructor(  private catService: CatService,
+      private catQuery: CatQuery) {
     };
     toggleActiveClass: true;
    cards: Cats[];
@@ -25,6 +22,6 @@ export class CardComponent implements OnInit {
     this.catQuery.cats$.subscribe(cardCat => this.cards = cardCat);
    };
    like(card: Cats): void {
-      this.catControl.like(card);
+      this.catService.toggleLike(card);
    };
 };

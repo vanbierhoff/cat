@@ -8,6 +8,7 @@ const routers: Routes = [
   {path:'card', component: CardComponent },
   {path:'tile', component: TileComponent},
   {path:'edit/:id', component: RedactComponent},
+  {path:'create', component: RedactComponent},
   {path:'**', redirectTo:'/card', pathMatch: 'full' }
 ]
 

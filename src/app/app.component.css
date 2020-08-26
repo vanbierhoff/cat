@@ -1,39 +1,7 @@
 .nav{
     display: flex;
     justify-content: center;
-}
-
-.nav__list{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-.nav__list > li{
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 1.3em;
-}
-
-.nav__item{
-    text-transform: uppercase;
-    color:#000000;
-
-}
-
-.nav__item:hover{
-  font-weight: 700;
-}
-
-.addCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    max-width: 300px;
-    margin: 0 auto;
-
 }
 
 .container{
@@ -62,15 +30,32 @@
     padding: 2% 0;
     text-transform: uppercase;
 }
-
-
-
-.store__card{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.nav__link{
+text-decoration: none;
+color: #696969;
+}
+.nav__link:visited{
+  color:inherit
+}
+.nav__link:active{
+  color:inherit
 }
 
+
+
+.nav__input_appearance{
+    appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}
+.nav__btn-add{
+  padding: 3px 7px 4.5px;
+  background: #68a6cf;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 5px 0 0 10px;
+  cursor: pointer;
+}
 .card_active{
     box-shadow: 0 2px  #68a6cf;
 }
