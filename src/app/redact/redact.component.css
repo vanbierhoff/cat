@@ -9,5 +9,34 @@
 }
 
 .redact__input{
+<<<<<<< HEAD
   opacity: 1;
 }
+=======
+  width: 60%;
+  background: #FBEEFF;
+  padding: 10px;
+  color: #99879D;
+  border: none;
+  outline: none;
+  mix-blend-mode: normal;
+  backdrop-filter: blur(40px);
+  border-radius: 8px;
+  margin: 10px 0 0 0;
+  opacity: 1;
+}
+
+.redact__input_resize{
+  resize: none;
+}
+
+.redact__btn{
+  background: #FBEEFF;
+  border: 0.3px solid #99879D;
+  outline: none;
+  color: #99879D;
+  padding: 7px 5px;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+}
+>>>>>>> af29fb247e3400dcebb0c1be1ed0ee5d2d9ffac7
