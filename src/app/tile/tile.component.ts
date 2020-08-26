@@ -23,6 +23,6 @@ export class TileComponent implements OnInit {
   }
   like(card: Cats): void {
     this.catService.toggleLike(card);
- };
+ }
 
 }

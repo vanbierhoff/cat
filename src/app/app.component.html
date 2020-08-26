@@ -12,14 +12,15 @@
         </label>
 
     <input type="radio"  class="nav__input nav__input_appearance"
-        value="tile" name="nav" id="nav__tile" >
+          value="tile" name="nav" id="nav__tile" >
+
          <label for="nav__tile"
          [routerLinkActive]="'card_active'">
          <a class="nav__link"  [routerLink]="['/tile']">Плитка</a>
         </label>
 
-        <a class="nav__link"
-        class="nav__btn-add"
+        <a
+        class="nav__btn-add nav__link"
         [routerLink]="['/create']">
         Добавить
         </a>

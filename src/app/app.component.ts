@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { CatService } from './cat.store/cat.serive'
+import { CatService } from './cat.store/cat.serive';
 
 @Component({
     selector: 'app-root',
@@ -11,7 +11,6 @@ export class AppComponent implements OnInit{
 
 
     ngOnInit(): void {
-      debugger
-      this.catService.initCat()
+      this.catService.initCat();
     }
 }
