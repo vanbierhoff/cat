@@ -9,10 +9,10 @@
 }
 
 form .ng-invalid.ng-dirty {
-  border: 1px solid #800000;
+  border: 1.2px solid #D60609;
 }
 form .ng-valid{
-  border: 1px solid#1C4204;
+  border: 1.2px solid #06991C;
 }
 
 .redact__input{
@@ -41,11 +41,6 @@ form .ng-valid{
   padding: 7px 5px;
   margin: 10px 0 0 0;
   border-radius: 8px;
+    cursor: pointer;
 }
 
-.valid-input_not-valid{
-  border: 1px solid #800000;
-}
-.valid-input_valid{
-  border: 1px solid#1C4204;
-}

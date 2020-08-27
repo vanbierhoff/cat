@@ -7,7 +7,7 @@ import {CardComponent} from './card/card.component';
 import { TileComponent } from './tile/tile.component';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { environment } from 'src/environments/environment';
-import {RedactComponent } from './redact/redact.component'
+import {RedactComponent } from './redact/redact.component';
 
 @NgModule({
   declarations: [

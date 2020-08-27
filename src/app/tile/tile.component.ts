@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CatQuery } from './../cat.store/cat.query';
-import {Cats} from '../cat.store/cat.models';
+import { Cats } from '../cat.store/cat.models';
 import { CatService } from './../cat.store/cat.serive';
 
 
@@ -13,8 +13,8 @@ import { CatService } from './../cat.store/cat.serive';
 })
 export class TileComponent implements OnInit {
 
-  constructor(  private catService: CatService,
-                private catQuery: CatQuery) {
+  constructor(private catService: CatService,
+    private catQuery: CatQuery) {
   }
 
   cards: Cats[];
@@ -23,6 +23,6 @@ export class TileComponent implements OnInit {
   }
   like(card: Cats): void {
     this.catService.toggleLike(card);
- };
+  }
 
 }

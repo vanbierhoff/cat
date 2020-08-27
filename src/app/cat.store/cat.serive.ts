@@ -1,12 +1,8 @@
-import { EdiCat } from './../redact/redact.component';
-
 import { CatStore } from './cat.store';
 import { Cats } from './cat.models';
 import { Injectable} from '@angular/core';
-import { EditCat } from '../redact/redact.component'
 
 
-// Интеграция стора с angular, уточнить как работает?
 @Injectable({ providedIn: 'root' })
 export class CatService {
 
@@ -99,8 +95,6 @@ export class CatService {
             liked: false
         },
     ];
-
-    // добавляем заметку в стор
     initCat(): void {
         this.cards.forEach(el => {
             this.catStore.add(el);
@@ -108,13 +102,12 @@ export class CatService {
     }
 
     toggleLike(cat: Cats): void {
-        const like: boolean = !cat.liked
+        const like: boolean = !cat.liked;
         this.catStore.update(cat.id,
             {liked: like});
 
     }
-    editCat(oldId: string, cat: EditCat): void {
-       debugger
+    editCat(oldId: string, cat: Cats): void {
       this.catStore.update(oldId,
             {
                 id: cat.id,
@@ -124,7 +117,7 @@ export class CatService {
             });
     }
 
-    addCat(cat:any): void {
+    addCat(cat: Cats): void {
       this.catStore.add(cat);
     }
 
