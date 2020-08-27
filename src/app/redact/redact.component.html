@@ -1,25 +1,27 @@
 <div class="redact__container">
-<form  class="redact__container"
-[formGroup]="form" (ngSubmit)="editCat()"
->
-  <input type="text" class="redact__input"
-  formControlName="name"
+  <form class="redact__container" [formGroup]="form" (ngSubmit)="editCat()">
+    <input
+      type="text"
+      class="redact__input"
+      formControlName="name"
+      placeholder="name"
+    />
+    <input
+      type="text"
+      class="redact__input"
+      formControlName="image"
+      placeholder="url"
+    />
 
-  placeholder="name">
-<input type="text" class="redact__input"
-formControlName="image"
-
-  placeholder="url" >
-
-<textarea type="text" rows="5" class="redact__input redact__input_resize"
-     placeholder="description"
-     formControlName="description"
-></textarea>
-<button type="submit" class="redact__btn"
-[disabled]="!form.valid"
->{{typeButton}}</button>
-</form>
-
+    <textarea
+      type="text"
+      rows="5"
+      class="redact__input redact__input_resize"
+      placeholder="description"
+      formControlName="description"
+    ></textarea>
+    <button type="submit" class="redact__btn" [disabled]="!form.valid">
+      {{ typeButton }}
+    </button>
+  </form>
 </div>
-
-
